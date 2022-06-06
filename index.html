@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/scripts.js"></script>
+    <title>Groceries</title>
+  </head>
+  <body>
+    <h1>Groceries</h1>
+    <div class="container">
+      <p></p>
+      <form id="favorites">
+        <div class="form-group">
+          <label for="produce">produce</label>
+          <select id="produce">
+            <option value=""></option>
+            <option value="apple">apple</option>
+            <option value="orange">orange</option>
+            <option value="banana">banana</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="snacks">snacks</label>
+          <select id="snacks">
+            <option value=""></option>
+            <option value="chocolate">chocolate</option>
+            <option value="peanuts">peanuts</option>
+            <option value="yogurt">yogurt</option>
+          </select>
+        </div>
+        <div class="list">
+          <ul>
+            <li id="ans1"></li>
+            <li id="ans2"></li>
+          </ul>
+        </div>
+
+        <div class="result-group">
+          <p>Your programming language is: <span id="match"></span></p>
+          <button type="submit" class="btn btn-dark">
+            Find My Programming Language!
+          </button>
+        </div>
+      </form>
+      <button type="click" id="hide-match" class="btn btn-dark">
+        Click Here To Clear!
+      </button>
+    </div>
+  </body>
+</html>
